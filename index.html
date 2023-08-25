@@ -14,8 +14,18 @@
     <script type="module" src="assets/js/main.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Pokedex</h1>
+    
+    <header id="header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Pok%C3%A9_Ball_icon.svg/1200px-Pok%C3%A9_Ball_icon.svg.png" alt="pokeball">
+        <h1 id="heading">Pokedex</h1>
     </header>
+
+    <section id="pokedexContent">
+        <ol id="pokemonList"></ol>
+        <button id="loadMoreButton" type="button">Load More</button>
+    </section>
+
+    <section id="pokemonDetailCard" class="detailCardClosed"></section>
+    
 </body>
 </html>

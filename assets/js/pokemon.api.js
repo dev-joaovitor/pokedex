@@ -10,9 +10,15 @@ const createPokemonByDetails = (pokemonDetails) => {
     pokemon.weight = pokemonDetails.weight;
     pokemon.stats = {}
 
+    let total = 0;
+
     for (const stat of pokemonDetails.stats){
+        total += stat.base_stat;
+
         pokemon.stats[stat.stat.name] = stat.base_stat;
     }
+
+    pokemon.stats.total = total;
 
     const types = pokemonDetails.types.map(typeSlot => typeSlot.type.name);
     const [ type ] = types;
@@ -42,6 +48,8 @@ const loadPokemon = async (offset = 0, limit = 5) => {
     const pokemonList = await Promise.all(pokemonPromiseList)
 
     console.log(pokemonList);
+
+    return pokemonList;
 }
 
 export {

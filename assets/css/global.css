@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+
+*, *::before, *::after {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #242424;
+}
+
+button {
+    cursor: pointer;
+}
+
+#header {
+    background-color: #ffc062;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#header img {
+    max-width: 70%;
+    height: 70px;
+}
+
+#pokedexContent {
+    padding: 1rem;
+    background: #fff;
+    max-width: 992px;
+    margin: 1rem auto;
+    border-radius: 1rem;
+}
+
+#pokemonList {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.pokemonCard {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 2rem 1rem;
+    border: 3px solid #00000059;
+    border-radius: 1rem;
+    color: #fff;
+}
+
+.pokemonCard img {
+    max-width: 100%;
+    height: 10rem;
+}
+
+.pokemonCard .name {
+    align-self: center;
+    max-width: 992px;
+    font-size: 1.235rem;
+    padding: 0.625rem;
+    margin: 0.5rem;
+    filter: brightness(1.2);
+    border-radius: 0.325rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.pokemonCard .types {
+    text-align: center;
+    align-self: center;
+    padding: 0.325rem;
+    margin: 0.5rem;
+    border-radius: 0.325rem;
+    filter: brightness(1.2);
+    text-transform: capitalize;
+}
+
+.pokemonCard .number {
+    align-self: flex-end;
+    opacity: 0.5;
+}
+
+.pokemonCard .details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+button:active {
+    box-shadow: none;
+}
+
+/* detaild Card */
+
+#pokemonDetailCard {
+    display: flex;
+    flex-direction: column;
+    /* background-color: #fff; */
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/80ff523f-ff84-457d-a547-464588d3a3d3/df1y9kh-c0955b87-3708-4ff5-8d39-9c2f6869084e.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzgwZmY1MjNmLWZmODQtNDU3ZC1hNTQ3LTQ2NDU4OGQzYTNkM1wvZGYxeTlraC1jMDk1NWI4Ny0zNzA4LTRmZjUtOGQzOS05YzJmNjg2OTA4NGUuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.CBw8EJITXnkaD1aX5NK92caGYvZxCh0oyFrPjyhSCjc);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    padding: 0;
+    margin: 0 auto;
+    top: 0;
+}
+
+.pokemonDetailCard {
+    margin: 2rem auto 0;
+    padding: 1rem;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: .5rem .5rem #00000059;
+}
+
+.detailCardClosed:is(#pokedexContent, #pokemonDetailCard) {
+    display: none;
+}
+
+#closeDetailCardButton, .moreInfoButton {
+    padding: 0.625rem;
+    margin: 0 auto;
+    margin-top: 10px;
+    border: 2px solid #161616;
+    border-radius: 10px;
+    box-shadow: 1px 2px;
+    font-size: large;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    filter: brightness(1.15);
+    border: 3px solid #1010109b;
+    justify-content: center;
+}
+
+.stats > span {
+    display: flex;
+    justify-content: space-between;
+}
+
+#loadMoreButton {
+    display: block;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-top: 10px;
+    border: 2px solid #161616;
+    border-radius: 10px;
+    box-shadow: 1px 2px;
+    font-size: large;
+    background-color: #fff1b4;
+}
+
+/* POKEMON COLORS */
+
+.normal {
+    background-color: #A8A77A;
+}
+.fire {
+    background-color: #EE8130;
+}
+.water {
+    background-color: #6390F0;
+}
+.electric {
+    background-color: #F7D02C;
+}
+.grass {
+    background-color: #7AC74C;
+}
+.ice {
+    background-color: #96D9D6;
+}
+.fighting {
+    background-color: #C22E28;
+}
+.poison {
+    background-color: #A33EA1;
+}
+.ground {
+    background-color: #E2BF65;
+}
+.flying {
+    background-color: #A98FF3;
+}
+.psychic {
+    background-color: #F95587;
+}
+.bug {
+    background-color: #A6B91A;
+}
+.rock {
+    background-color: #B6A136;
+}
+.ghost {
+    background-color: #735797;
+}
+.dragon {
+    background-color: #6F35FC;
+}
+.dark {
+    background-color: #705746;
+}
+.steel {
+    background-color: #B7B7CE;
+}
+.fairy {
+    background-color: #D685AD;
+}

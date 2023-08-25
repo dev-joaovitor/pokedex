@@ -5,10 +5,8 @@ class Pokemon {
     mainType;
     height;
     weight;
-    stats;
+    stats
     image;
 }
 
-export {
-    Pokemon
-}
+export { Pokemon }
