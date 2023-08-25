@@ -1,5 +1,8 @@
 # Pokedex Project
 
+This project was made as a project challenge from DIO Santander Bootcamp 2023, enjoy =D
+
+
 ## How to run this project on your machine:
 
 ### First, clone it:
